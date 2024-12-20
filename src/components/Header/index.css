@@ -1,0 +1,350 @@
+.header {
+  background-color: #f7f8f9;
+  box-shadow: 0 0 2px grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease-in;
+  z-index: 2;
+}
+
+.login-button {
+  margin-left: 50px;
+}
+
+.login-button p {
+  /* text-decoration: underline; */
+  cursor: pointer;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+}
+
+.header img {
+  width: 70px;
+}
+
+.location-box {
+  width: 250px;
+  margin-left: 60px;
+}
+
+.select-location .blue {
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.select-location {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.option {
+  display: flex;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background-color: #c8f8f6;
+}
+
+.option p {
+  margin-left: 10px;
+  color: #444444;
+}
+
+.option .blue {
+  color: #3a77ff;
+}
+
+.option-box {
+  box-shadow: 0 0 10px grey;
+  background-color: white;
+  position: absolute;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.search-box {
+  display: flex;
+  margin-left: 30px;
+}
+
+.search-box .i {
+  background-color: black;
+  color: white;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 0 6px 6px 0;
+}
+
+.search {
+  padding: 10px;
+  width: 480px;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 6px 0 0 6px;
+}
+
+.search-div {
+  position: absolute;
+  width: 480px;
+  margin-left: 30px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.12), 0 6px 6px 0 rgba(0, 0, 0, 0.24);
+  max-height: 400px;
+  z-index: 2;
+}
+.search-div li {
+  list-style: none;
+  padding: 16px;
+  border-bottom: 0.1rem solid #ced6d7;
+  font-size: 14px;
+  color: #002f34;
+  cursor: pointer;
+}
+.search-div li:hover {
+  background-color: #c8f8f6;
+}
+
+.sell_button button {
+  margin-left: 55px;
+  border-style: solid;
+  border-width: 5px;
+  border-top-color: #23e5db;
+  border-left-color: #ffce32;
+  border-right-color: #3a77ff;
+  border-bottom-color: #3a77ff;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  display: flex;
+}
+.hamb {
+  display: none;
+  cursor: pointer;
+}
+.myAdDiv {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  /* visibility: hidden; */
+}
+.hideMyAdDiv {
+  visibility: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+.myAdImg {
+  width: 23px !important;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+  .location-box {
+    width: 230px;
+    margin-left: 40px;
+  }
+  .option {
+    width: 230px;
+  }
+  .search {
+    width: 450px;
+  }
+  .search-div {
+    width: 450px;
+  }
+  .search-box {
+    margin-left: 25px;
+  }
+  .login-button {
+    margin-left: 30px;
+  }
+  .sell_button button {
+    margin-left: 30px;
+  }
+}
+/* pehle 912 thi  */
+@media screen and (max-width: 1182px) {
+  .header {
+    position: static;
+    margin-bottom: 105px;
+    box-shadow: none;
+    background-color: white;
+  }
+  .container {
+    position: fixed;
+    display: flex;
+    background-color: #fff;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: -200px;
+    width: 100%;
+    box-shadow: 0 0 2px grey;
+    gap: 18px;
+  }
+  .location-box {
+    margin: 10px 0;
+  }
+  .search-box {
+    margin: 10px 0 0 0;
+  }
+  .search {
+    width: 305px;
+    font-size: 0.9rem;
+  }
+  .login-button {
+    margin: 10px 0;
+  }
+  .login-button p {
+    color: white;
+  }
+  .sell_button button {
+    margin: 10px 0;
+  }
+  .option-box {
+    z-index: 100;
+  }
+  .hamb {
+    width: 30px !important;
+    display: block;
+  }
+  .img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f7f8f9;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 2px grey;
+  }
+  .active {
+    top: 50px;
+  }
+  .search-div {
+    margin-left: 0px;
+    width: 305px;
+  }
+  .location-box {
+    position: absolute;
+    top: 75px;
+  }
+  .search-container {
+    position: absolute;
+    top: 141px;
+  }
+  .header img {
+    width: 55px;
+  }
+  .location-box {
+    font-size: 0.9rem;
+  }
+  .login-button {
+    display: flex;
+    justify-content: center;
+    padding: 13px 20px;
+    width: 90%;
+    cursor: pointer;
+    background-color: #002f34;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+  }
+  .myAdDiv {
+    margin-left: 0;
+  }
+  .myAd {
+    font-size: 14px !important;
+    margin-left: 0px;
+  }
+}
+
+/* my device width 359 */
+
+@media screen and (max-width: 450px) {
+  .header img {
+    width: 50px;
+  }
+  .hamb {
+    width: 25px !important;
+  }
+  .search {
+    width: 75vw;
+  }
+  .search-div {
+    width: 86vw;
+  }
+  .product {
+    margin-top: 135px;
+  }
+  .box {
+    margin-top: 0px;
+  }
+  .location-box {
+    font-size: 0.8rem;
+  }
+  .select-location {
+    height: 40px;
+  }
+  .search {
+    height: 40px;
+    font-size: 12px;
+  }
+  .search-box .i {
+    padding: 13px;
+    font-size: 14px;
+  }
+  .search-div li {
+    font-size: 13px;
+  }
+  .login-button p {
+    font-size: 15px;
+  }
+  .sell_button button {
+    font-size: 14px;
+    cursor: pointer;
+    color: black;
+  }
+  .myAdDiv {
+    font-size: 15px;
+  }
+}

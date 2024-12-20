@@ -1,0 +1,37 @@
+.navbar2-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.navbar2 {
+  width: 1275px;
+}
+
+.navbar2 ul {
+  display: flex;
+  list-style: none;
+  padding: 23px 0px;
+}
+
+.navbar2 ul li {
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+.move-icon {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .navbar2-parent {
+    padding: 0 55px;
+  }
+}
+
+@media screen and (max-width: 1182px) {
+  .navbar2-parent {
+    display: none;
+  }
+}
